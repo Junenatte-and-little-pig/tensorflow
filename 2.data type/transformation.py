@@ -26,7 +26,7 @@ def main():
     print(tf.tile(xx, multiples=[2, 1, 1, 1]))
 
     # 传播机制，轻量级复制，推荐
-    # 在部分场景中，当+连接两个不同维度的张量时，会调用broadcast
+    # 在部分场景中，当+连接两个不同维度的张量时，会调用broadcast_to
     print(tf.broadcast_to(xx, [2, 4, 4, 3]))
 
 
